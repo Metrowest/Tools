@@ -14,14 +14,14 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:width" content="256">
-  <meta property="og:image:height" content="256">
-  <meta property="og:description" content="Esta aplicacion provee algunas herramientas para los acomodadores, los siervos ministeriales y los ancianos.">
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
+  <meta property="og:description"
+    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
   <meta property="og:title" content="Metrowest Tools">
-  <meta property="og:image" content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons/og-image.jpg?raw=true">
-  <meta property="og:url" content="https://metrowest.github.io/Tools/">
-
-
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Tools/desastre.html">
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -58,16 +58,6 @@
   <script type="module" href="/src/app-index.ts"></script>
   <!-- required -->
 
-  <!--SW-->
-  <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register(
-        '/Tools/sw.js',
-        { scope: '/Tools/' }
-      )
-    }
-  </script>
-
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- Top arow CDN Link -->
@@ -76,6 +66,7 @@
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
 
   <!-- .stellarnav -->
   <div class="stellarnav">
@@ -194,149 +185,168 @@
 
   <!--body original-->
   <section class="container">
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>METROWEST TOOLS<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-    <div class="containera">
-      <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
-      <h3>“Haz la obra de evangelizador, efectúa tu ministerio plenamente.”<a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/4#v=55:4:5" target="_blank">(2 TIM. 4:5)</a>.
-      </h3>
-    </div>
-
-    <div class="content1">
-      <p>
-        Metrowest Tools no sustituye el sitio oficial de la Organización
-        Cristiana de los Testigos de Jehová, jw.org ni la aplicación JW Library.
-        Tampoco sustituye la aplicación NW JWS, que se utiliza para enviar los informes y publicar los anuncios,
-        eventos,
-        programas de las reuniones de la congregación.
-      </p>
-      <p>
-        Este sitio se ha preparado con la intención de facilitar a los hermanos de la congregación Metrowest Spanish
-        las siguientes herramientas:<br><br>
-      </p>
-      <div class="content3">
-        1. <a href="asistencia.html"><i><img title="casa1" class="img6" src="public/assets/img/asistencia.webp">
-          </i></a>
-        <p-5>
-          Asistencia: forma para registrar la asistencia de manera digital.<br><br>
-        </p-5>
+    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+      <h2 class="section-header" id="section-header">
+        <i><img class="img4" alt="" src="public/assets/img/header1.webp"></i>APLIQUE PARA EL PRECURSORADO AUXILIAR<i>
+          <img class="img4" alt="" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+      <img src="public/assets/img/precursor.webp" alt="" class="imgLogo" />
+      <div class="content1">
+        <p>
+          Debido a mi amor a Jehová y mi deseo de ayudar al prójimo a
+          aprender acerca de él y sus amorosos propósitos, quisiera
+          aumentar mi participación en el servicio del campo siendo precursor
+          auxiliar durante el período indicado abajo:
+        </p>
       </div>
-      <div class="content3">
-        2. <a href="desastre.html"><i><img title="casa1" class="img6" src="public/assets/img/tormenta1.webp">
-          </i></a>
-        <p-5>
-          Plan de emergencia: plan ante una emergencia natural, incluye:
-        </p-5>
+      <div class="content2">
+        <div class="inputs">
+          <input type="text" name="Mes" id="Mes" required>
+          <label>El Mes (los meses) de:</label>
+        </div>
       </div>
-      <p-5>
-        • Responsabilidades<br>
-      </p-5>
-      <p-5>
-        • Plan aprobado por el cuerpo<br>
-      </p-5>
-      <p-5>
-        • Vigilancia ante huracán<br>
-      </p-5>
-      <p-5>
-        • Aviso de huracán<br>
-      </p-5>
-      <p-5>
-        • Después del huracán<br>
-      </p-5>
-      <p-5>
-        • Pasos por seguir <br>
-      </p-5>
-      <p-5>
-        • Textos para el pastoreo<br>
-      </p-5>
-      <p-5>
-        • Preparación<br><br>
-      </p-5>
-
-      <div class="content3">
-        3. <a href="salon.html"><i><img title="casa1" class="img6" src="public/assets/img/salon.webp">
-          </i></a>
-        <p-5>
-          Salón: plan de seguridad del salón del reino.<br><br>
-        </p-5>
+      <div class="content1">
+        <p>
+          ¿Desea usted servir como Prec.
+          Aux.
+          de “continuo”,
+          o sea indefinidamente y así cumplir con el requisito de 50 horas (30 horas en tiempo
+          de
+          campañas)?<br>
+          <br>Como recordatorio, una vez aprobado para ser Prec. Aux. de “continuo”, si
+          durante un
+          mes en particular
+          no puede cumplir con el requisito de horas se le dará de baja y tendrá que aplicar
+          otra
+          vez.
+        </p>
       </div>
-      <div class="content3">
-        4. <a href="territorios.html"><i><img title="casa1" class="img6" src="public/assets/img/territorio1.webp">
-          </i></a>
-        <p-5>
-          Territorios: acceso directo a los territorios para el servicio (requiere autorización).<br><br>
-        </p-5>
+      <select input id="Decontinuo" name="De continuo" class="form-check-input" type="radius"
+        onchange="this.className=this.options[this.selectedIndex].className">
+        <option class="flechas" selected="true">--Seleccione--</option>
+        <option class="flechasRoja" value="No">------No------</option>
+        <option class="flechasVerde" value="Si, de continuo">Si, de continuo</option>
+      </select>
+      <div class="content1">
+        <p>
+          Gozo de una buena reputación moral y tengo buenos
+          hábitos. He
+          hecho planes para satisfacer el requisito de horas. (Vea
+          Nuestro
+          Ministerio del Reino de junio de 2013, página
+          2).
+        </p>
       </div>
-      <div class="content3">
-        5. <a href="interes.html"><i><img title="casa1" class="img6" src="public/assets/img/precursor1.webp">
-          </i></a>
-        <p-5>
-          Interesados: forma para informar personas que muestren interés y hablen otro idioma o no sean
-          de nuestro territorio.<br><br>
-        </p-5>
+      <div class="content2">
+        <div class="inputs">
+          <input type="date" name="Fecha" id="Fecha" required>
+          <label>Fecha</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" name="Nombre" id="Nombre" required>
+          <label>Nombre</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" name="Apellido" id="Apellido" required>
+          <label>Apellido</label>
+        </div>
       </div>
-      <div class="content3">
-        6. <a href="precursorado.html"><i><img title="casa1" class="img6" src="public/assets/img/precursor.webp">
-          </i></a>
-        <p-5>
-          Precursorado auxiliar: forma para solicitar el precursorado auxiliar. <br><br>
-        </p-5>
+
+      <div class="content1">
+        <p>
+          NOTA: Después de llenar la forma presione el botón “Confirme en WhatsApp” y luego
+          envié su aplicación utilizando WhatsApp. El mensaje será dirigido al coordinador del
+          cuerpo de ancianos. El proceso debe concluir enviando el mensaje por WhatsApp,
+          de lo contrario no habrá completado su aplicación.
+        </p>
       </div>
-      <P1 id="condiciones"></P1>
-      <div class="content3">
-        7. <a href="recursos.html"><i><img title="casa1" class="img6" src="public/assets/img/recurso.webp">
-          </i></a>
-        <p-5>
-          Recursos: instrucciones y dirección para utilizar algunas de las funciones y herramientas incluye imágenes y
-          videos). <br><br>
-        </p-5>
+      <div class="containerb">
+        <a href="precursorado2.html"><i><img title="precursorado2" class="img8"
+              src="public/assets/img/precursor5.png"></i></a>
+        <h3>Vea el articulo titilado <a href="precursorado2.html" target="_blank">"Una magnífica meta para el nuevo año
+            de servicio"</a>
+        </h3>
       </div>
-    </div>
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>CONDICIONES DE USO<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-
-    <img title="condiciones" src="public/assets/img/condiciones.webp" class="imgLogo" />
-
-    <div class="content1">
-      <h3>El uso de este Web App está regido por las presentes condiciones.</h3>
-      <p>
-        Al usar este sitio, usted se compromete a cumplir todas estas condiciones establecidas en este
-        formato digital.<br>
-        <br> No debe utilizar este sitio si no está dispuesto a cumplir estas condiciones en su totalidad o
-        en parte.<br>
-        <br> El enlace e información contenida es para uso único y exclusivo de los miembros de la
-        congregación Metrowest.<br>
-        <br>La información contenida no se debe postear en las redes sociales ni adelantar a menos que
-        tengan permiso del Cuerpo de Ancianos.
-      </p>
-
-      <h3>Lo siguiente está prohibido: </h3>
-      <p>
-        Publicar material gráfico, publicaciones electrónicas, artículos de este medio digital de anuncios en
-        cualquier sitio web, sitio de intercambio de archivos, sitio de intercambio de vídeo o red social.
-        <br>
-      </p>
-    </div>
-
-    <div class="containera">
-      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
-      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
-    </div>
-    <div class="formulario__parrafo">
-      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
-    </div>
-
+      <div class="content1" id="respuesta"></div>
+      <div class="content1">
+        <button type="submit" id="submit" class="formulario__submit">Confirme en WhatsApp</button>
+      </div><br>
+      <div class="content1">
+        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+      </div>
+      <div class="content1">
+        <h2 class="titulo">Cuerpo de Ancianos, Metrowest<br> <span class="typed"></span></h2>
+      </div>
+      <div class="content1">
+        <h3>Para el Comité de Servicio de la Congregación:</h3>
+        <p>
+          1. ¿Es el solicitante un buen ejemplo del vivir cristiano?<br>
+          2. Quienes hayan sido censurados o readmitidos durante el
+          pasado año o todavía estén bajo restricciones no satisfacen los
+          requisitos.<br />
+          3. ¿Han consultado con su superintendente de grupo?
+        </p>
+      </div>
+    </form>
     <div class="button">
       <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwA6MRAFklwdoPIbyW7CnebniyOtqLLkVbEidbDVgVj9IyL4M-ug2Oa8JUtzJT9glLQow/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => alert("Confirme su solicitud en WhatsApp"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script>
+    $("a").click(function () {
+      $("nav").removeClass("w--open");
+    });
+    $("a").click(function () {
+      $("div").removeClass("w--open");
+    });
+  </script>
+
+
+
+  <script src="public/prec.rojo.js"></script>
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -353,12 +363,6 @@
   <!-- required stellarnav-->
 
   <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-
-  <!-- Memanggil scripts-->
-  <script type="text/javascript"></script>
-
-
-
 </body>
 
 </html>
