@@ -82,6 +82,23 @@ body {
     line-height: 1.7;
 }
 
+.content1 {
+    line-height: 1.7;
+    margin: 15px;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content3 {
+    display: flex;
+  }
+
 .containerb {
     border-radius: 10px;
     justify-content: center;
@@ -103,15 +120,6 @@ body {
     justify-content: center;
     line-height: 1.7;
 }
-
-.content1 {
-    line-height: 1.7;
-    margin: 15px;
-}
-
-.content3 {
-    display: flex;
-  }
 
 img {
     max-width: 100%;
