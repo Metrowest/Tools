@@ -47,7 +47,6 @@
 /* main level */
 .stellarnav>ul>li {
 	display: inline-block;
-	background: linear-gradient(darkred 20%,black 80%);
 }
 
 .stellarnav>ul>li>a {
@@ -111,10 +110,10 @@
 
 /* dark theme */
 .stellarnav.dark {
-	background: linear-gradient(darkred 20%,black 80%);
+    background: #000000;
 	margin-top: -15px;
 	height: 120px;
-  }
+}
 
 .stellarnav.dark a {
 	color: #FFF;

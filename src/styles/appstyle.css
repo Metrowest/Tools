@@ -30,7 +30,7 @@ body {
     font-size: 48px;
     text-decoration: none;
     color: white;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .header p {
@@ -85,14 +85,6 @@ body {
 .content1 {
     line-height: 1.7;
     margin: 15px;
-}
-
-.content2 {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .content3 {
@@ -244,6 +236,7 @@ img {
     font-size: 24px;
     color: #fff;
     background: linear-gradient(-135deg, #000000, #5f5f5f);
+
     box-shadow: 0 0 3px 1px;
     border-radius: 20px;
     margin-right: auto;
@@ -740,7 +733,8 @@ textarea#direccion,
     font-size: 20px;
     transition: .3s;
     background-color: #95fefe;
-    min-width: 300px;
+    min-width: 275px;
+    width: 100%;
 }
 
 .content2 .inputs input:focus {
@@ -778,8 +772,7 @@ textarea#direccion,
     margin-left: 10px;
     background-color: #95fefe;
     border-radius: 5px;
-    margin-top: 20px;
-    color: #000
+    color: #000;
 }
 
 .form-check-label {
@@ -798,9 +791,8 @@ input#nombre {
     font-size: 24px;
     background-color: #95fefe;
     border-radius: 5px;
-    max-width: 100%;
-    position: relative;
-    display: flex;
+
+
     text-align: center;
     border: none;
     border-bottom: 2px solid #005691;
