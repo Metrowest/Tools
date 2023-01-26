@@ -3,43 +3,39 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Metrowest Tools</title>
+  <title>Metrowest GPS</title>
 
   <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is a Tools app" />
+  <meta name="description" content="This is a Metrowest GPS" />
 
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
-
-  <!-- Facebook metadata -->
-  <meta property="og:image:width" content="192">
-  <meta property="og:image:height" content="192">
-  <meta property="og:description"
-    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
-  <meta property="og:title" content="Metrowest Tools">
-  <meta property="og:image"
-    content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/Tools/desastre.html">
-
-  <!-- Boxicons CDN Link Nav var pequwno-->
-  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
 
   <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="public/assets/icons/maskable_icon_x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
   <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
-  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
-  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
-  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
   <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
@@ -52,16 +48,15 @@
     href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
     onload="document.documentElement.classList.add('sl-theme-dark');">
 
-  <!-- required -->
+  <!-- .stellarnav required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
   <script type="module" href="/src/app-index.ts"></script>
-  <!-- required -->
+  <!-- .stellarnav required -->
 
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- Top arow CDN Link -->
-
 </head>
 
 <body>
@@ -71,13 +66,11 @@
   <!-- .stellarnav -->
   <div class="stellarnav">
     <ul>
-      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp">
+          </i>Home</a>
       </li>
-      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
-              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
-      </li>
-      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
-          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/asistencia.webp">
+          </i>Congregación</a>
         <ul>
           <li>
             <a href="desastre.html">
@@ -91,10 +84,13 @@
               Plan De Seguridad<br>Del Salón Del Reino
             </a>
           </li>
+          <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+          </li>
         </ul>
       </li>
-      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
-            class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp">
+          </i>Predicación</i></a>
         <ul>
           <li>
             <a href="territorios.html">
@@ -116,28 +112,40 @@
           </li>
         </ul>
       </li>
-      <ul>
-        <li>
-          <a href="territorios.html">
-            <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
-            Territorios
-          </a>
-        </li>
-        <li>
-          <a href="interes.html">
-            <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
-            Interesados
-          </a>
-        </li>
-        <li>
-          <a href="precursorado.html">
-            <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
-            Precursorado
-          </a>
-        </li>
-      </ul>
-      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
-            class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="eventos" class="img6 js-arrow" src="public/assets/img/familia4.webp">
+          </i>Eventos</a>
+        <ul>
+          <li><a href="conmemoracion.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/bg.webp"></i>Conmemoración</a>
+          </li>
+          <li>
+            <a href="circuito1.html">
+              <i><img title="android" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 16 de Septiembre 2023
+            </a>
+          </li>
+          <li>
+            <a href="circuito2.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 14 de Enero 2024
+            </a>
+          </li>
+          <li>
+            <a href="regional.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea3.webp"></i>
+              Asamblea Regional<br> 28 - 30 de julio de 2023
+            </a>
+          </li>
+          <li>
+            <a href="campana.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
+              Campaña <br> Mundial
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp">
+          </i>Recursos</a>
         <ul>
           <li>
             <a href="recursos.html">
@@ -164,19 +172,24 @@
             </a>
           </li>
         </ul>
-      </li>
       <li><a href="iniciar.html"><i><img title="visita" class="img6" src="public/assets/img/a&m.webp"></i>Ancianos</a>
       </li>
-
+      </li>
     </ul>
   </div>
   <!-- .stellarnav -->
 
   <!-- .stellarnav header-->
   <div class="header">
-    <a href="#">Metrowest Tools </a>
-    <h1>Trabajando Unidos Como Congregación</h1>
-    <img title="logolarge" src="public/assets/img/tormenta1.webp" class="imgLogo2" />
+    <a href="#">Metrowest Tools</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN ANTE UNA EMERGENCIA
+      NATURAL<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <img title="logolarge" src="public/assets/img/tormenta1.webp" class="img8" />
     <h3> “El recordatorio de Jehová es fidedigno, hace sabio al inexperto.” (SALMO 19:7).<br>
     </h3>
   </div>
@@ -185,12 +198,12 @@
   <!--my body-->
   <section class="container">
     <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN ANTE UNA EMERGENCIA
-      NATURAL<i>
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Responsabilidades de los
+      encargados y Auxiliares de grupo<i>
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
-          <P1 id="Responsabilidades"></P1>
+    <P1 id="Responsabilidades"></P1>
 
     <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
       <select aria-label="gourl" NAME="gourl">
@@ -209,16 +222,12 @@
     <div class="containera">
       <img title="tormenta2" src="public/assets/img/tormenta2.webp" class="img8" />
     </div><br>
-    <h4>“Por eso, ya sea que estén comiendo, bebiendo o haciendo cualquier otra cosa, háganlo todo para la gloria de Dios.” <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=1+Corintios+10%3A31"
-        target="_blank">(1 Corintios 10:31)</a>. La frase “cualquier otra cosa” definitivamente se puede aplicar a la respuesta ante un
+    <h4>“Por eso, ya sea que estén comiendo, bebiendo o haciendo cualquier otra cosa, háganlo todo para la gloria de
+      Dios.” <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=1+Corintios+10%3A31" target="_blank">(1 Corintios
+        10:31)</a>. La frase “cualquier otra cosa” definitivamente se puede aplicar a la respuesta ante un
       desastre.
     </h4><br>
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Responsabilidades de los
-      encargados y Auxiliares de grupo<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
+
 
 
     <div class="containerc">
@@ -243,12 +252,12 @@
       </p2><br>
 
       <div class="containerc">
-          <h4>
-            Queremos que nuestra respuesta sea organizada y se lleve a cabo ordenadamente.
-          </h4>
-        </div>
+        <h4>
+          Queremos que nuestra respuesta sea organizada y se lleve a cabo ordenadamente.
+        </h4>
+      </div>
 
-        <p2>
+      <p2>
         • Debemos mantenernos en contacto con los ancianos, especialmente con nuestro
         superintendente de grupo de servicio, si se encuentra disponible.<br>
         • Los ancianos nos dirán dónde encontrarnos, a qué familias hay que ayudar y qué
@@ -769,11 +778,11 @@
     <div class="content1">
       <p>
         • Pastoreen, cap. 26, “Desastres y emergencias”<br><br>
-        • <a href="https://www.jw.org/finder?wtlocale=S&issue=2017-10&pub=g17&srcid=share"
-        target="_blank">¡Despertad! Número 5 de 2017</a>, “Cuando golpea un desastre.
+        • <a href="https://www.jw.org/finder?wtlocale=S&issue=2017-10&pub=g17&srcid=share" target="_blank">¡Despertad!
+          Número 5 de 2017</a>, “Cuando golpea un desastre.
         Qué hacer para sobrevivir”<br><br>
         • <a href="https://www.jw.org/finder?srcid=jwlshare&wtlocale=S&prefer=lang&docid=1102014262&par=76"
-        target="_blank">El Reino de Dios ya está gobernando, cap. 20, “Cuando azota un desastre”</a><br><br>
+          target="_blank">El Reino de Dios ya está gobernando, cap. 20, “Cuando azota un desastre”</a><br><br>
         • Material didáctico para la preparación y respuesta frente a los desastres en jw.org
       </p>
       <p>
@@ -787,14 +796,14 @@
           target="_blank">FORMULARIO: Tarjeta de instrucción: tornado/huracán/inundación</a>.
         <br><br>
         • <a href="https://drive.google.com/file/d/1FGCVtODVfVmgRsJMQbFc0o9D-TTJQCO8/view?usp=sharing"
-        target="_blank">FORMULARIO: Tarjeta de instrucción: terremoto</a>.
+          target="_blank">FORMULARIO: Tarjeta de instrucción: terremoto</a>.
         <br><br>
         <P1 id="Pasos"></P1>
         • <a href="https://drive.google.com/file/d/1EhdGXrplWhd99Jk3M1LlsUYp5ju7sf1P/view?usp=sharing"
-        target="_blank">FORMULARIO: Tarjeta de instrucción: incendio</a>.
+          target="_blank">FORMULARIO: Tarjeta de instrucción: incendio</a>.
         <br><br>
         • <a href="https://drive.google.com/file/d/1uvF12lZ1NkkCo9-9JJ4vrbBuhW4yUTPP/view?usp=sharing"
-        target="_blank">FORMULARIO: Tarjeta de instrucción: generadores portátiles</a>
+          target="_blank">FORMULARIO: Tarjeta de instrucción: generadores portátiles</a>
         <br><br>.
       </p>
 

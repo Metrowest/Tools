@@ -14,14 +14,16 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:width" content="192">
-  <meta property="og:image:height" content="192">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
   <meta property="og:description"
-    content="Esta aplicaci&oacute;n le proveer&aacute; el plan de emergencias y algunas herramientas para el servicio.">
+    content="Esta aplicacion provee algunas herramientas para los acomodadores, los siervos ministeriales y los ancianos.">
   <meta property="og:title" content="Metrowest Tools">
   <meta property="og:image"
-    content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons2/android-chrome-192x192.png?raw=true/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/Tools/desastre.html">
+    content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons/og-image.jpg?raw=true">
+  <meta property="og:url" content="https://metrowest.github.io/Tools/">
+
+
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -32,12 +34,15 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/assets/icons/maskable_icon_x192.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
   <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
@@ -55,6 +60,16 @@
   <script type="module" href="/src/app-index.ts"></script>
   <!-- required -->
 
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/Tools/sw.js',
+        { scope: '/Tools/' }
+      )
+    }
+  </script>
+
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- Top arow CDN Link -->
@@ -63,18 +78,15 @@
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
-  <app-index></app-index>
 
   <!-- .stellarnav -->
   <div class="stellarnav">
     <ul>
-      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp">
+          </i>Home</a>
       </li>
-      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
-              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
-      </li>
-      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
-          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/asistencia.webp">
+          </i>Congregación</a>
         <ul>
           <li>
             <a href="desastre.html">
@@ -88,10 +100,13 @@
               Plan De Seguridad<br>Del Salón Del Reino
             </a>
           </li>
+          <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+          </li>
         </ul>
       </li>
-      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
-            class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp">
+          </i>Predicación</i></a>
         <ul>
           <li>
             <a href="territorios.html">
@@ -113,28 +128,40 @@
           </li>
         </ul>
       </li>
-      <ul>
-        <li>
-          <a href="territorios.html">
-            <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
-            Territorios
-          </a>
-        </li>
-        <li>
-          <a href="interes.html">
-            <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
-            Interesados
-          </a>
-        </li>
-        <li>
-          <a href="precursorado.html">
-            <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
-            Precursorado
-          </a>
-        </li>
-      </ul>
-      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
-            class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="eventos" class="img6 js-arrow" src="public/assets/img/familia4.webp">
+          </i>Eventos</a>
+        <ul>
+          <li><a href="conmemoracion.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/bg.webp"></i>Conmemoración</a>
+          </li>
+          <li>
+            <a href="circuito1.html">
+              <i><img title="android" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 16 de Septiembre 2023
+            </a>
+          </li>
+          <li>
+            <a href="circuito2.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 14 de Enero 2024
+            </a>
+          </li>
+          <li>
+            <a href="regional.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea3.webp"></i>
+              Asamblea Regional<br> 28 - 30 de julio de 2023
+            </a>
+          </li>
+          <li>
+            <a href="campana.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
+              Campaña <br> Mundial
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp">
+          </i>Recursos</a>
         <ul>
           <li>
             <a href="recursos.html">
@@ -161,10 +188,9 @@
             </a>
           </li>
         </ul>
-      </li>
       <li><a href="iniciar.html"><i><img title="visita" class="img6" src="public/assets/img/a&m.webp"></i>Ancianos</a>
       </li>
-
+      </li>
     </ul>
   </div>
   <!-- .stellarnav -->

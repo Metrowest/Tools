@@ -3,38 +3,45 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Metrowest GPS</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest Tools</title>
 
   <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is a Metrowest GPS" />
+  <meta name="description" content="This is a Tools app" />
 
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+  <meta property="og:description"
+    content="Esta aplicacion provee algunas herramientas para los acomodadores, los siervos ministeriales y los ancianos.">
+  <meta property="og:title" content="Metrowest Tools">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Tools/blob/main/public/assets/icons/og-image.jpg?raw=true">
+  <meta property="og:url" content="https://metrowest.github.io/Tools/">
+
+
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-  <!-- Facebook metadata -->
-  <meta property="og:image:width" content="279">
-  <meta property="og:image:height" content="279">
-  <meta property="og:description"
-    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
-  <meta property="og:title" content="Metrowest GPS">
-  <meta property="og:image" content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
-  <meta property="og:url" content="https://metrowest.github.io/GPS/">
-
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png">
-  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
-  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/assets/icons/maskable_icon_x192.png">
   <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
   <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
-  <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
@@ -47,31 +54,29 @@
     href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
     onload="document.documentElement.classList.add('sl-theme-dark');">
 
-  <!-- .stellarnav required -->
+  <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
   <script type="module" href="/src/app-index.ts"></script>
-  <!-- .stellarnav required -->
+  <!-- required -->
 
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- Top arow CDN Link -->
+
 </head>
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
-  <app-index></app-index>
 
   <!-- .stellarnav -->
   <div class="stellarnav">
     <ul>
-      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp">
+          </i>Home</a>
       </li>
-      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
-              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
-      </li>
-      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
-          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/asistencia.webp">
+          </i>Congregación</a>
         <ul>
           <li>
             <a href="desastre.html">
@@ -85,10 +90,13 @@
               Plan De Seguridad<br>Del Salón Del Reino
             </a>
           </li>
+          <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+          </li>
         </ul>
       </li>
-      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
-            class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp">
+          </i>Predicación</i></a>
         <ul>
           <li>
             <a href="territorios.html">
@@ -110,28 +118,40 @@
           </li>
         </ul>
       </li>
-      <ul>
-        <li>
-          <a href="territorios.html">
-            <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
-            Territorios
-          </a>
-        </li>
-        <li>
-          <a href="interes.html">
-            <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
-            Interesados
-          </a>
-        </li>
-        <li>
-          <a href="precursorado.html">
-            <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
-            Precursorado
-          </a>
-        </li>
-      </ul>
-      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
-            class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="eventos" class="img6 js-arrow" src="public/assets/img/familia4.webp">
+          </i>Eventos</a>
+        <ul>
+          <li><a href="conmemoracion.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/bg.webp"></i>Conmemoración</a>
+          </li>
+          <li>
+            <a href="circuito1.html">
+              <i><img title="android" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 16 de Septiembre 2023
+            </a>
+          </li>
+          <li>
+            <a href="circuito2.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 14 de Enero 2024
+            </a>
+          </li>
+          <li>
+            <a href="regional.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea3.webp"></i>
+              Asamblea Regional<br> 28 - 30 de julio de 2023
+            </a>
+          </li>
+          <li>
+            <a href="campana.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
+              Campaña <br> Mundial
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp">
+          </i>Recursos</a>
         <ul>
           <li>
             <a href="recursos.html">
@@ -158,33 +178,31 @@
             </a>
           </li>
         </ul>
-      </li>
       <li><a href="iniciar.html"><i><img title="visita" class="img6" src="public/assets/img/a&m.webp"></i>Ancianos</a>
       </li>
-
+      </li>
     </ul>
   </div>
   <!-- .stellarnav -->
 
   <!-- .stellarnav header-->
   <div class="header">
-    <a href="#">Metrowest GPS</a>
+    <a href="#">Metrowest Tools </a>
     <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
-    <img title="logolarge" src="public/assets/img/salon.webp" class="imgLogo2" />
-    <h3>"Porque, donde están dos o tres reunidos en mi nombre,+ allí estoy yo en medio de ellos”. (Mateo 18:20)<br>
-    </h3>
-  </div>
-  <!-- .stellarnav header-->
-
-  <!--my body-->
-  <section class="container">
     <h2 class="section-header" id="section-header">
       <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN DE SEGURIDA DEL SALÓN DEL
       REINO<i>
         <img title="header21" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
+    <img title="logolarge" src="public/assets/img/salon.webp" class="imgLogo2" />
+    <h3>"Porque, donde están dos o tres reunidos en mi nombre, allí estoy yo en medio de ellos”. (Mateo 18:20)<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
 
+  <!--my body-->
+  <section class="container">
     <div class="content1">
       <h2 class="section-header" id="section-header">
         <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Medidas de seguridad<i>
@@ -362,7 +380,7 @@
     <div class="containera">
       <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
           href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10) </a>.</h3>
-      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+      <img title="logo" src="public/assets/img/logo.webp" class="img8" />
     </div>
     <div class="formulario__parrafo">
       <h3>Gracias por aprovechar este medio digital de comunicación.</h3>

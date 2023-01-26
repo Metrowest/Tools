@@ -57,6 +57,7 @@
   <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/countdown.css">
   <script type="module" href="/src/app-index.ts"></script>
   <!-- required -->
 
@@ -187,127 +188,81 @@
 
   <!-- .stellarnav header-->
   <div class="header">
-    <a href="#">Metrowest Tools </a>
-    <h1>Trabajando Unidos Como Congregación</h1>
-    <img title="logolarge" src="public/assets/img/Pastoreo2.webp" class="imgLogo2" />
-    <h3> Presta constante atención a tu conducta y a tu enseñanza. No dejes de hacer
-      estas cosas, pues así te salvarás a ti mismo y también a los que te escuchan.
-      (1 Timoteo 4:16).<br>
+    <a href="#">¡PRONTO!</a>
+    <h1>Noviembre de 2023</h1>
+    <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
+    <h3> “Y los envió a predicar el Reino de Dios...” (Lucas 9:2).<br>
     </h3>
   </div>
   <!-- .stellarnav header-->
 
   <!--body original-->
   <section class="container">
-    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
-      <h2 class="section-header" id="section-header">
-        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PERSONA QUE MOSTRÓ INTERÉS<i>
-          <img title="header2" class="img4" src="public/assets/img/header2.webp">
-        </i>
-      </h2>
+    <div class="content1">
+      <div class="overlay"></div>
+      <div class="wrapper">
+        <div class="">
+          <h1 class="title1"><span>¡PRONTO!</span> Noviembre de 2023</h1>
+          <div class="countdown-container">
+            <div>
+              <p id="days" class="big-text">0</p>
+              <span>Days</span>
+            </div>
+            <div>
+              <p id="hours" class="big-text">0</p>
+              <span>Hours</span>
+            </div>
+            <div>
+              <p id="min" class="big-text">0</p>
+              <span>Min</span>
+            </div>
+            <div>
+              <p id="sec" class="big-text">0</p>
+              <span>Sec</span>
+            </div>
+          </div>
+          <div class="containera">
+            <h1 class="title1">Campaña mundial</h1>
+            <h1 class="sub-title1">¡Una excelente oportunidad para ampliar nuestro servicio a Jehová¡
+            </h1><br><br>
+            <h1 class="sub-title1">
+              ¡Hagamos planes con la familia¡ Sirvamos juntos como precursores auxiliares,
+              “Nada me da más alegría que oír que mis hijos siguen andando en la verdad”
+              <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=3+Juan+4" target="_blank">(3 Juan 4)
+              </a>. Con solo 15 o 30 horas podemos completar el requisito de horas.
+            </h1><br><br>
+            <img title="logolarge" src="public/assets/img/familia2.webp" class="imgLogo2" />
+            <h1 class="sub-title1">
+              “Nada me da más alegría que oír que mis hijos siguen andando en la verdad” (3 Juan 4)
+            </h1>
+            <!--<P2>***Puede compartir la invitación en formato digital<a
+                href="https://www.jw.org/finder?wtlocale=S&docid=1011268&srcid=share" target="_blank">
+                aqui </a>o presione el botón para descargarla e imprimirla.***
+            </P2><br><br>
+            <div class="buttons-area">
+              <button type="submit" id="submit" class="formulario__submit"
+                onclick="window.location.href =
+            'https://www.jw.org/download/?output=html&pub=mi23&fileformat=PDF&alllangs=0&langwritten=S&txtCMSLang=S&isBible=0';">
+                ¡Descargue la <br>invitación aqui!
+              </button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <h3>Datos de la persona interesada
-      </h3>
+    <div class="containera">
+      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
+      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+    </div>
+    <div class="formulario__parrafo">
+      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+    </div>
 
-      <div class="content2">
-        <div class="inputs">
-          <input title="Nombre" type="text" name="Nombre" id="Nombre" required>
-          <label>Nombre y Apellido</label>
-        </div>
-      </div>
-      <label class="form-check-label" for="flexCheckDefault">Sexo</label>
-      <select input id="Sexo" name="Sexo" class="form-check-input" type="radius"
-        onchange="this.className=this.options[this.selectedIndex].className">
-        <option class="flechasAzul" selected="true">--Seleccione--</option>
-        <option class="flechasRoja" value="Hombre">Hombre</option>
-        <option class="flechasVerde" value="Mujer">Mujer</option>
-      </select>
-      <div class="content2">
-        <div class="mb-3"><br>
-          <label for="Direccion" class="form-label">Dirección</label>
-          <textarea class="form-control" name="Direccion" id="Direccion" rows="2"></textarea>
-        </div>
-
-        <div class="inputs">
-          <input title="Telefono" type="text" name="Telefono" id="Telefono">
-          <label>Teléfono</label>
-        </div>
-        <div class="inputs">
-          <input title="Idioma" type="text" name="Idioma" id="Idioma" required>
-          <label>Idioma</label>
-        </div><br>
-        <div class="inputs">
-          <input title="Correo" type="text" name="Correo electronico" id="Correo">
-          <label>Correo electrónico</label>
-        </div><br>
-        <div class="inputs">
-          <input title="Mejor" type="text" name="Mejor momento para contactar" id="Mejor">
-          <label>Mejor momento para contactar</label>
-        </div>
-        <div class="mb-3">
-          <label for="Observaciones" class="form-label">Observaciones</label>
-          <textarea class="form-control" name="Observaciones" id="Observaciones" rows="3"></textarea>
-        </div>
-        <div class="formulario__parrafo">
-          <br>
-          <h2>Datos del publicador</h2>
-        </div>
-        <div class="inputs">
-          <input title="Publicador" type="text" name="Publicador" id="Publicador" required>
-          <label>Nombre y apellido</label>
-        </div>
-        <div class="content1">
-          <h3>PAUTAS PARA LLENAR ESTE FORMULARIO</h3>
-          <p>
-            1. El publicador debe llenar el formulario completo y asegurarse de que todos los datos son
-            exactos y están escritos claramente.<br><br>
-            2. La dirección debe estar completa. Especifique si se trata de una avenida, un bulevar, una
-            calle, una carretera, etc. Incluya el número del apartamento si es necesario.<br><br>
-            3. Indique el idioma que mejor entiende la persona.<br><br>
-            4. En “Observaciones”, indique brevemente en que tema ha mostrado interés y que publicaciones,
-            si alguna, se le han dejado. Si desea alguna publicación en particular, mencione cual y en que
-            idioma la solicita.<br><br>
-            5. Envié de inmediato el formulario al secretario de la congregación presionando el botón rojo
-            y confirme los datos en WhatsApp (debe enviar el mensaje por WhatsApp).<br><br>
-            6. El secretario enviará el formulario a la congregación o el grupo que corresponda. Si no sabe
-            a qué congregación o grupo enviarlo o no tiene la dirección, remitirá la información a la
-            sucursal mediante jw.org.
-          </p>
-        </div>
-      </div>
-      <div id="respuesta"></div>
-      <div class="content2">
-        <button type="submit" id="submit" class="formulario__submit">Confirme en WhatsApp</button>
-      </div>
-      <div class="formulario__parrafo">
-        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
-      </div>
-      <div class="content2">
-        <h2 class="titulo">Cuerpo de Ancianos<br> <span class="typed"></span></h2>
-      </div>
-    </form>
     <div class="button">
       <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
-
-  <script>
-    const scriptURL =
-      'https://script.google.com/macros/s/AKfycbwIYoZt2WmS7S5QaFU4ENU7x0HhE4aCLWRRXGVUFUV0NUOZKwsuuE-TCs_iQk5t279N6Q/exec'
-    const form = document.forms['google-sheet']
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)
-      })
-        .then(response => alert("Confirme su solicitud en WhatsApp"))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -325,34 +280,11 @@
 
   <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
 
-  <script src="public/interes.js"></script>
+  <!-- Memanggil scripts-->
   <script type="text/javascript"></script>
+  <script src="public/campana.js"></script>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
 
-    (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-        '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-  <script>
-    $("a").click(function () {
-      $("nav").removeClass("w--open");
-    });
-    $("a").click(function () {
-      $("div").removeClass("w--open");
-    });
-  </script>
 </body>
 
 </html>
